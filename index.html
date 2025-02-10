@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyful Tulips Primary School</title>
+  <!-- External Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Comic+Neue&display=swap" rel="stylesheet">
+  <!-- External Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../tulip.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <a href="../pages/index.html">
+      <i class="fas fa-school"></i>
+      <h1>Joyful Tulips Primary School</h1>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#classes">Classes/Home Work</a></li>
+        <li><a href="#games">Game</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Joyful Tulips Primary School!</h2>
+      <p>Where learning is fun and exciting!</p>
+      <a href="#" class="btn">Enrol Now</a>
+    </div>
+  </section>
+
+   <!-- About Us Section -->
+<section id="about" class="about">
+  <div class="about-container">
+    <!-- About Section Content -->
+    <div class="about-section">
+      <a href="../pages/about.html">
+        <h2>About Us</h2>
+        <p>We are a school dedicated to making learning a joyful experience for every child. <br> Learn More..</p>
+      </a>
+    </div>
+
+    <!-- Vertical Line  -->
+    <div class="vertical-line"></div> 
+
+    <!-- QR Code Section -->
+    <div class="qr-section"> 
+    <h3>Download Our App</h3> 
+      <img src="../images/qr-code.png" alt="Download App QR Code" class="qr-code">
+      <p>Scan the QR code to download our app.</p> 
+    </div>
+  </div> 
+  <a href="#" class="btn">Download App</a> 
+</section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    
+    <div class="gallery-grid">
+      <div class="image-container">
+        <img src="../images/tulip3B.jpg" alt="School Event 1">
+        <a href="gallery.html">  <div class="overlay">
+              <i class="fas fa-search-plus"></i>
+              <p>Fun School Event!</p>
+            </div>
+        </a>
+    </div>
+
+      <div class="image-container">
+        <img src="../images/tulip2B.jpg" alt="School Event 1">
+         <a href="gallery.html"> <div class="overlay">
+            <i class="fas fa-search-plus"></i>
+            <p>Art Class Exhibittion</p>
+          </div></a>
+
+      </div>
+          <div class="image-container">
+            <img src="../images/tulip4.jpg" alt="School Event 1">
+            <a href="gallery.html"> <div class="overlay">
+              <i class="fas fa-search-plus"></i>
+              <p>Sport Day</p>
+            </div></a>
+      </div>
+  </section>
+
+  <!-- Classes Section -->
+  <section id="classes" class="classes">
+    <h2>Our Classes</h2>
+    <div class="class-grid">
+      <div class="class-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Art Class</h3>
+        <p>Explore your creativity with colors and crafts!</p>
+      </div>
+      <div class="class-card">
+        <i class="fas fa-music"></i>
+        <h3>Music Class</h3>
+        <p>Learn to play instruments and sing your favorite songs!</p>
+      </div>
+      <div class="class-card">
+        <i class="fas fa-flask"></i>
+        <h3>Science Class</h3>
+        <p>Discover the wonders of science through fun experiments!</p>
+      </div>
+    </div>
+    <div class="class1">
+      <a href="classes.html" class="btn">Learn More</a>
+  </div>
+  </section>
+
+  <section id="games" class="games">
+    <h2>Fun Games</h2>
+    <div class="game-grid">
+      <div class="game-card">
+        <i class="fas fa-puzzle-piece"></i>
+        <h3>Puzzle Game</h3>
+      </div>
+      <div class="game-card">
+        <i class="fas fa-calculator"></i>
+        <h3>Math Game</h3>
+      </div>
+      <div class="game-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Art Game</h3>
+      </div>
+    </div>
+    <div class="class1">
+      <a href="game.html" class="btn">Learn More</a>
+  </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Joyful Tulips Primary School. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox Container -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<!-- Popup Enrollment Form -->
+<div id="enrol-popup" class="popup">
+  <div class="popup-content">
+    <span class="close-popup">&times;</span>
+    <h2>Enrol Now</h2>
+    <form id="enrol-form">
+      <label for="name">Child's Name (Surname first):</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Child's Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="parent-name">Parent's Name (Father):</label>
+      <input type="text" id="parent-name" name="parent-name-father" required>
+
+      <label for="parent-name">Parent's Name (Mother):</label>
+      <input type="text" id="parent-name" name="parent-name-mother" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone-mother" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="../tulip.js"></script>
+
+</body>
+</html>
